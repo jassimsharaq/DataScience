@@ -286,7 +286,6 @@ FROM emp
 ORDER BY salary DESC;
 SELECT * FROM `emp_sal`;
 
-/*ASSIGNMENT 2 */
 SELECT * FROM employee WHERE deptno =10 AND salary > 3000;
 SELECT COUNT(marks),
 CASE
@@ -312,7 +311,6 @@ SELECT SUM(population) AS 'Population in California' FROM city where district='C
 SELECT AVG(population) AS 'Average population',countrycode FROM city GROUP BY countrycode;
 SELECT o.orderNumber,o.status,o.customerNumber,c.customerName,o.comments FROM orders AS o, customers AS c where o.status = 'Disputed';
 
-/*ASSIGNMENT 3 */
 DELIMITER //
 CREATE PROCEDURE order_status ( IN year INT, IN month INT)
 BEGIN
